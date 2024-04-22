@@ -1,0 +1,11 @@
+{
+  "comp": {
+    "paper": {
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.extra-small.value}"
+        }
+      }
+    }
+  }
+}

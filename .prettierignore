@@ -1,0 +1,17 @@
+# Ignored directories:
+**/build
+**/dist
+**/node_modules
+**/public
+coverage
+docs/storybook
+lib
+
+# Ignored files/file types:
+.*
+*.html
+*.lock
+*.md
+*.snap
+*.yml
+makefile

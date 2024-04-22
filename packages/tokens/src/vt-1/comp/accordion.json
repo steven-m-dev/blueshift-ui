@@ -1,0 +1,14 @@
+{
+  "comp": {
+    "app-bar": {
+      "min-height": {
+        "small": {
+          "value": "3.5rem"
+        },
+        "default": {
+          "value": "4rem"
+        }
+      }
+    }
+  }
+}

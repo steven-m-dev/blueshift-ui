@@ -1,0 +1,12 @@
+{
+  "sys": {
+    "elevation": {
+      "0": { "value": 0, "valueType": "number" },
+      "1": { "value": 1, "valueType": "number" },
+      "2": { "value": 3, "valueType": "number" },
+      "3": { "value": 6, "valueType": "number" },
+      "4": { "value": 8, "valueType": "number" },
+      "5": { "value": 12, "valueType": "number" }
+    }
+  }
+}

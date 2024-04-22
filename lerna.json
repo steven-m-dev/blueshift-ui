@@ -1,0 +1,18 @@
+{
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "ignoreChanges": ["**/*.md", "**/*.test.@(j|t)s?(x)"],
+      "message": "publish",
+      "registry": "https://artifactory.nerdy-core.com/artifactory/api/npm/npm-dev-local/"
+    },
+    "version": {
+      "allowBranch": "*",
+      "message": "bump version"
+    }
+  },
+  "npmClient": "yarn",
+  "useNx": true,
+  "useWorkspaces": true,
+  "version": "0.12.0"
+}

@@ -1,0 +1,41 @@
+{
+  "sys": {
+    "motion": {
+      "duration": {
+        "extra-long": {
+          "1": { "value": "700ms" },
+          "2": { "value": "800ms" },
+          "3": { "value": "900ms" },
+          "4": { "value": "1000ms" }
+        },
+        "long": {
+          "1": { "value": "450ms" },
+          "2": { "value": "500ms" },
+          "3": { "value": "550ms" },
+          "4": { "value": "600ms" }
+        },
+        "medium": {
+          "1": { "value": "250ms" },
+          "2": { "value": "300ms" },
+          "3": { "value": "350ms" },
+          "4": { "value": "400ms" }
+        },
+        "short": {
+          "1": { "value": "50ms" },
+          "2": { "value": "100ms" },
+          "3": { "value": "150ms" },
+          "4": { "value": "200ms" }
+        }
+      },
+      "easing": {
+        "emphasized": { "value": "cubic-bezier(0.2, 0, 0, 1)" },
+        "emphasized-accelerate": { "value": "cubic-bezier(0.3, 0, 0.8, 0.15)" },
+        "emphasized-decelerate": { "value": "cubic-bezier(0.05, 0.7, 0.1, 1)" },
+        "linear": { "value": "cubic-bezier(0, 0, 1, 1)" },
+        "standard": { "value": "cubic-bezier(0.2, 0, 0, 1)" },
+        "standard-accelerate": { "value": "cubic-bezier(0.3, 0, 1, 1)" },
+        "standard-decelerate": { "value": "cubic-bezier(0, 0, 0, 1)" }
+      }
+    }
+  }
+}
