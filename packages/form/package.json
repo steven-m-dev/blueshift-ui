@@ -1,0 +1,19 @@
+{
+  "name": "@blueshift-ui/form",
+  "version": "0.12.0",
+  "description": "Form provides context such as filled/focused/error/required for inputs",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/form#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@mui/material": "5.11.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "rm -rf dist && tsc"
+  }
+}

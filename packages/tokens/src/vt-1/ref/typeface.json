@@ -1,0 +1,14 @@
+{
+  "ref": {
+    "typeface": {
+      "brand": { "value": "Lato" },
+      "plain": { "value": "sans-serif" },
+      "weight": {
+        "bold": { "value": 900 },
+        "medium": { "value": 400 },
+        "regular": { "value": 400 },
+        "semibold": { "value": 700 }
+      }
+    }
+  }
+}

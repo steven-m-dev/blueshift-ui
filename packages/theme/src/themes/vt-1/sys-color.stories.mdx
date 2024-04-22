@@ -1,0 +1,10 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import { vt1Tokens as tokens } from '@blueshift-ui/tokens';
+
+<Meta title="Themes/VT-1/Tokens/System/Colors" />
+
+<ColorPalette>
+  {Object.entries(tokens.sys.color).map(([colorName, colorValues]) => (
+    <ColorItem colors={colorValues} key={colorName} title={`sys.color.${colorName}`} />
+  ))}
+</ColorPalette>

@@ -1,0 +1,10 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import { vt1Tokens as tokens } from '@blueshift-ui/tokens';
+
+<Meta title="Themes/VT-1/Tokens/Reference/Palette" />
+
+<ColorPalette>
+  {Object.entries(tokens.ref.palette).map(([paletteName, paletteColors]) => (
+    <ColorItem colors={paletteColors} key={paletteName} title={`ref.palette.${paletteName}`} />
+  ))}
+</ColorPalette>

@@ -1,0 +1,19 @@
+{
+  "name": "@blueshift-ui/box",
+  "version": "0.12.0",
+  "description": "The Box component serves as a wrapper component for most of the CSS utility needs.",
+  "homepage": "https://github.com/varsitytutors/blueshift-ui/tree/master/packages/box#readme",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@mui/material": "5.11.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "transpile": "rm -rf dist && tsc"
+  }
+}

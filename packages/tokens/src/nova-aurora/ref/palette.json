@@ -1,0 +1,84 @@
+{
+  "ref": {
+    "palette": {
+      "primary": {
+        "0": { "value": "#0D0C3C" },
+        "10": { "value": "#252450" },
+        "20": { "value": "#3D3D63" },
+        "30": { "value": "#565577" },
+        "40": { "value": "#6E6D8A" },
+        "50": { "value": "#86869E" },
+        "60": { "value": "#9E9EB1" },
+        "70": { "value": "#B6B6C5" },
+        "80": { "value": "#CFCED8" },
+        "90": { "value": "#E7E7EC" },
+        "100": { "value": "#FFFFFF" }
+      },
+      "secondary": {
+        "0": { "value": "#4A48C6" },
+        "10": { "value": "#5C5ACC" },
+        "20": { "value": "#6E6DD1" },
+        "30": { "value": "#807FD7" },
+        "40": { "value": "#9291DD" },
+        "50": { "value": "#A5A4E3" },
+        "60": { "value": "#B7B6E8" },
+        "70": { "value": "#C9C8EE" },
+        "80": { "value": "#DBDAF4" },
+        "90": { "value": "#EDEDF9" },
+        "100": { "value": "#FFFFFF" }
+      },
+      "tertiary": {
+        "0": { "value": "#6F4A9D" },
+        "10": { "value": "#7D5CA7" },
+        "20": { "value": "#8C6EB1" },
+        "30": { "value": "#9A80BA" },
+        "40": { "value": "#A992C4" },
+        "50": { "value": "#B7A5CE" },
+        "60": { "value": "#C5B7D8" },
+        "70": { "value": "#D4C9E2" },
+        "80": { "value": "#E2DBEB" },
+        "90": { "value": "#F1EDF5" },
+        "100": { "value": "#FFFFFF" }
+      },
+      "neutral": {
+        "0": { "value": "#EFEEEA" },
+        "10": { "value": "#F1F0EC" },
+        "20": { "value": "#F2F1EE" },
+        "30": { "value": "#F4F3F0" },
+        "40": { "value": "#F5F5F2" },
+        "50": { "value": "#F7F7F5" },
+        "60": { "value": "#F9F8F7" },
+        "70": { "value": "#FAFAF9" },
+        "80": { "value": "#FCFCFB" },
+        "90": { "value": "#FDFDFD" },
+        "100": { "value": "#FFFFFF" }
+      },
+      "green": {
+        "0": { "value": "#01A562" },
+        "10": { "value": "#1AAE72" },
+        "20": { "value": "#34B781" },
+        "30": { "value": "#4DC091" },
+        "40": { "value": "#67C9A1" },
+        "50": { "value": "#80D2B1" },
+        "60": { "value": "#99DBC0" },
+        "70": { "value": "#B3E4D0" },
+        "80": { "value": "#CCEDE0" },
+        "90": { "value": "#E6F6EF" },
+        "100": { "value": "#FFFFFF" }
+      },
+      "red": {
+        "0": { "value": "#000000" },
+        "10": { "value": "#650C00" },
+        "20": { "value": "#8F1B0C" },
+        "30": { "value": "#A12818" },
+        "40": { "value": "#BD3C2C" },
+        "50": { "value": "#E26555" },
+        "60": { "value": "#E88477" },
+        "70": { "value": "#EEA399" },
+        "80": { "value": "#F3C1BB" },
+        "90": { "value": "#F9E0DD" },
+        "100": { "value": "#FCF0EE" }
+      }
+    }
+  }
+}

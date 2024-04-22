@@ -1,0 +1,49 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - release-packages-*
+env:
+  REPO_NAME: blueshift-ui
+  SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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 #dex-bots
+  VT_ARTIFACTORY_TOKEN: ${{ secrets.VT_ARTIFACTORY_TOKEN }}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn setup
+
+      - name: Run Tests
+        run: yarn test
+
+      - name: Lerna Publish
+        run: lerna publish from-package --yes
+
+      - name: Notify Slack on Publish Success
+        if: success()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_MESSAGE: ${{ ':package:' }} Publish of ${{env.REPO_NAME}}'s updated packages succeeded!
+          SLACK_WEBHOOK: ${{ env.SLACK_WEBHOOK_URL }}
+
+      - name: Notify Slack on Publish Failure
+        if: failure()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_MESSAGE: ${{ ':no_entry:' }} Publish of ${{env.REPO_NAME}}'s updated packages failed!
+          SLACK_WEBHOOK: ${{ env.SLACK_WEBHOOK_URL }}

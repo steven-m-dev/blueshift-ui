@@ -1,0 +1,43 @@
+{
+  "comp": {
+    "button": {
+      "border-radius": {
+        "default": {
+          "value": "{sys.shape.corner.extra-small.value}"
+        }
+      },
+      "box-shadow": {
+        "default": {
+          "value": "none"
+        },
+        "active": {
+          "value": "0 0.125rem 0 {ref.palette.neutral.0.value}"
+        },
+        "hover": {
+          "value": "0 0.125rem 0 {ref.palette.neutral.0.value}"
+        }
+      },
+      "height": {
+        "small": {
+          "value": "2.5rem"
+        },
+        "default": {
+          "value": "3.5rem"
+        }
+      },
+      "horizontal-padding": {
+        "small": {
+          "value": "1rem"
+        },
+        "default": {
+          "value": "2rem"
+        }
+      },
+      "text-transform": {
+        "default": {
+          "value": "none"
+        }
+      }
+    }
+  }
+}

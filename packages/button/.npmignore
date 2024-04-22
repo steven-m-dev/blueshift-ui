@@ -1,0 +1,7 @@
+# Ignored directories:
+node_modules
+src
+
+# Ignore files/file types:
+*.log
+tsconfig.json

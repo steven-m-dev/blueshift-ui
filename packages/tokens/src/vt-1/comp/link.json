@@ -1,0 +1,20 @@
+{
+  "comp": {
+    "link": {
+      "color": {
+        "default": {
+          "value": "{ref.palette.secondary.0.value}"
+        },
+        "primary": {
+          "value": "{ref.palette.secondary.0.value}"
+        },
+        "secondary": {
+          "value": "{ref.palette.neutral.0.value}"
+        },
+        "error": {
+          "value": "{sys.color.error.main.value}"
+        }
+      }
+    }
+  }
+}

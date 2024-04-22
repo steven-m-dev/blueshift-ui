@@ -1,0 +1,10 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import { novaAuroraTokens as tokens } from '@blueshift-ui/tokens';
+
+<Meta title="Themes/Nova Aurora/Tokens/System/Colors" />
+
+<ColorPalette>
+  {Object.entries(tokens.sys.color).map(([colorName, colorValues]) => (
+    <ColorItem colors={colorValues} key={colorName} title={`sys.color.${colorName}`} />
+  ))}
+</ColorPalette>

@@ -1,0 +1,46 @@
+name: Deploy Storybook
+
+concurrency: deploy-storybook
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.VT_ST_AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.VT_ST_AWS_SECRET_ACCESS_KEY }}
+  REPO_NAME: blueshift-ui
+  VT_ARTIFACTORY_TOKEN: ${{ secrets.VT_ARTIFACTORY_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Staging
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn setup
+
+      - name: Build Storybook
+        run: yarn build-storybook
+
+      - name: S3 Upload
+        uses: jakejarvis/s3-sync-action@v0.5.1
+        with:
+          args: --acl public-read --follow-symlinks
+        env:
+          SOURCE_DIR: ./docs/storybook
+          AWS_REGION: us-west-2
+          AWS_S3_BUCKET: vt-assets-st
+          DEST_DIR: ${{ env.REPO_NAME }}/storybook
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
